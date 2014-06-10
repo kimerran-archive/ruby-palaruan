@@ -1,0 +1,15 @@
+<h1>Listing blood requests</h1>
+ 
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Text</th>
+  </tr>
+ 
+  <% @requests.each do |r| %>
+    <tr>
+      <td><%= r.name %></td>
+      <td><%= r.details %></td>
+    </tr>
+  <% end %>
+</table>
