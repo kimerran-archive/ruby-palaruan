@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140610043540) do
+ActiveRecord::Schema.define(version: 20140610064315) do
 
   create_table "blood_requests", force: true do |t|
     t.string   "name"
@@ -25,6 +25,7 @@ ActiveRecord::Schema.define(version: 20140610043540) do
     t.string   "details"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "short_url"
   end
 
 end

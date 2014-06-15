@@ -58,6 +58,6 @@ end
 
 Bloodlyf::Application.routes.draw do
   resources :requests
-
+  get 'requests/:id/:url'  => 'requests#show_url'
   root 'welcome#index'
 end 

@@ -12,6 +12,12 @@ class RequestsController < ApplicationController
 	end
 
 	def show
+		redirect_to :action => 'show_url', :id => params[:id], :url => 'test-url'
+		#redirect_to action: 'show_url', status: 302, id:
+		#@request = Request.find(params[:id])
+	end
+
+	def show_url
 		@request = Request.find(params[:id])
 	end
 
