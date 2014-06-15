@@ -1,0 +1,11 @@
+User.Edit
+
+<%= form_for @user do |f| %>
+  <%= f.label :name %>:
+  <%= f.text_field :name %><br />
+
+  <%= f.label :fbid %>:
+  <%= f.text_field :fbid %><br />
+
+  <%= f.submit %>
+<% end %>

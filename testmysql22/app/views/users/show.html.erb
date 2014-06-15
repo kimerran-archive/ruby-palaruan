@@ -1,0 +1,15 @@
+User info showing:
+
+Name: <%= @user.name%>
+<br />
+Blood type : <%= @user.blood_type%>
+
+
+
+Events for this user:
+<% @events.each do |e|%>
+	<p>
+		<%= e.title%>
+		<%= e.details%>
+	</p>
+<% end %>
